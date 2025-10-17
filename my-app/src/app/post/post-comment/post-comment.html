@@ -1,0 +1,13 @@
+@defer (on hover) {
+    @if (comments().length > 0){
+        <ul>
+            @for (comment of comments(); track comment){
+                <li>
+                    {{ comment }}
+                </li>
+            }
+        </ul>
+    }
+} @placeholder {
+  <div>hoover to display</div>
+}

@@ -1,0 +1,7 @@
+<p></p>
+<div class="total">Total:{{ total().toLocaleString('pt-PT', {
+        style: 'currency',
+        currency: 'EUR',
+      }) }}</div>
+<p></p>
+<button (click)="clearCart()">Clear cart</button>

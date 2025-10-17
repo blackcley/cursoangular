@@ -1,0 +1,60 @@
+@defer {
+    @for(post of posts; track post){
+        <div>{{post}}</div>
+        <div><app-post-comment [post]="post"></app-post-comment></div>
+    }
+} @placeholder {
+  <div>Loading posts...</div>
+}
+
+<!--
+@defer (on hover) {
+  @for (post of posts; track post) {
+        <div>{{ post }}</div>
+    }
+} @placeholder {
+  <div>Loading posts...</div>
+}
+-->
+
+<!--
+@defer (on viewport) {
+    @for (post of posts; track post) {
+        <div>{{ post }}</div>
+    }
+} @placeholder {
+  <div>Loading posts...</div>
+}
+-->
+
+<!--
+@defer (on timer(2000)) {
+  @for (post of posts; track post) {
+    <div>{{ post }}</div>
+  }
+} @placeholder {
+  <div>Loading posts...</div>
+}
+-->
+
+<!--
+<button (click)="loadPosts()">Load Posts</button>
+@defer (when trigger) {
+  @for (post of posts; track post) {
+    <div>{{ post }}</div>
+  }
+} @placeholder {
+  <div>Waiting for trigger...</div>
+}
+-->
+
+<!--
+@defer {
+    @for(post of posts; track post){
+        <div>{{post}}</div>
+    }
+} @placeholder {
+  <div>Loading posts...</div>
+}
+-->
+

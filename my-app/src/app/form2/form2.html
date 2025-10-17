@@ -1,0 +1,15 @@
+<div formArrayName="aliases" class="aliases-group">
+  <h2>Aliases</h2>
+
+  <button type="button" class="add-alias-btn" (click)="addAlias()">+ Add another alias</button>
+
+  @for (alias of aliases.controls; track $index; let i = $index) {
+    <div class="form-group alias-item">
+      <div class="alias-input-row">
+        <input id="alias-{{ i }}" type="text" [formControlName]="i" placeholder="Enter alias" />
+        <button type="button" (click)="removeAlias(i)" class="remove-alias-btn">✕</button>
+      </div>
+    </div>
+  }
+  
+</div>

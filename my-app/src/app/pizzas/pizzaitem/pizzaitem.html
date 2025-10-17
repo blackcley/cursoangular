@@ -1,0 +1,11 @@
+<p></p>
+<div class="id">ID: {{pizza().id}}</div>
+<p></p>
+<div class="name">Name: {{pizza().name}}</div>
+<p></p>
+<div class="price">Price: {{pizza().price.toLocaleString('pt-PT', {
+        style: 'currency',
+        currency: 'EUR',
+      })}}</div>
+<p></p>
+<button [attr.data-pizza-id]="pizza().id">Add to cart</button>
